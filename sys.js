@@ -4,7 +4,7 @@ function sys() {
 }
 function watch() {
     // Changes background 
-    document.body.style.backgroundImage = "url('jeff.webp')";
+    document.body.style.backgroundImage = "url('https://github.com/Vermont02/FOsSoftWeb/releases/download/ZIPS/jeff.webp')";
     // Changes text on line 1
     document.getElementById("commes").innerHTML = "YOUR COMPUTER HAS BEEN COMPROMISED";
     document.getElementById("commes").style.color = "Red";
