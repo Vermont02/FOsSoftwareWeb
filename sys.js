@@ -28,39 +28,47 @@ function watch() {
     document.getElementById("commes5").style.color = "Red";
 }
 // When "s" is pressed will execute function "watch" 
-document.addEventListener('keydown', function(event) {
-    if (event.key === "s") {
+document.addEventListener('keydown', function(jeff) {
+    if (jeff.key === "s") {
 
         watch();    
     }
 });
 
-const IR = document.getElementById('Cal2')
-const IE = document.getElementById('Cal');
-let ping = 0;
-let pong = 0;
-const pingpong = ping * pong;
+// Listens for key "0" 
+document.addEventListener('keydown', cal);
 
-IE.addEventListener('input', function() {
-    ping = this.value;
-    console.log(pingpong)
-});
+// Function is connected to event listener above. Executes "multcal"
+function cal(time) {
+    if (time.key === "0") {
+        multcal();
+    }
+};
 
-// For future use
+// Opens a prompt, which multiples given numbers  
+function multcal() {
+alert("Multiplcation Calculator")
+let ping = parseFloat(prompt("First Number"));
+let pong = parseFloat(prompt("Second Number"));
+let pingpong = ping * pong;
+alert("Answer:" + pingpong);   
+};
+
+// Logs "Work In Progress"
 function data() {
-alert('Work In Progress');
-let bun = "bun";
-let yun = "yun";
-console.log(bun, yun);
-}
+alert("Sorry, that feature isn't available right now.");
+console.log('bunyun');
 
-// For future use
+};  
+
+// executes function above
 document.addEventListener('keydown', function(event) {
     if (event.key === "Tab") {
         
         data();
     }
 });
+
 
 
 
