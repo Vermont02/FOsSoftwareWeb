@@ -47,7 +47,7 @@ function cal(time) {
 
 // Opens a prompt, which multiples given numbers  
 function multcal() {
-alert("Multiplcation Calculator")
+alert("Multiplication Calculator")
 let ping = parseFloat(prompt("First Number"));
 let pong = parseFloat(prompt("Second Number"));
 let pingpong = ping * pong;
