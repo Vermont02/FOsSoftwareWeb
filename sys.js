@@ -69,8 +69,8 @@ document.addEventListener('keydown', function(event) {
     }
 });
 
+// Plays  noise when "s" is clicked
 const noise = new Audio('https://github.com/Vermont02/FOsSoftwareWeb/releases/download/ZIPS/scare.mp3');
-
 document.addEventListener('keydown', function(keyplay) {
     if (keyplay.key === "s") {
         noise.play();
