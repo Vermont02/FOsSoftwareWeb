@@ -29,7 +29,7 @@ function watch() {
 }
 // When "s" is pressed will execute function "watch" 
 document.addEventListener('keydown', function(jeff) {
-    if (jeff.key === "s") {
+    if (jeff.key === "`") {
 
         watch();    
     }
@@ -40,7 +40,7 @@ document.addEventListener('keydown', cal);
 
 // Function is connected to event listener above. Executes "multcal"
 function cal(time) {
-    if (time.key === "`") {
+    if (time.key === "0") {
         multcal();
     }
 };
