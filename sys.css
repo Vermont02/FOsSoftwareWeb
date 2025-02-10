@@ -3,7 +3,6 @@ body {
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
-    overflow: hidden;
 }
 h1 {
     text-align: center;
