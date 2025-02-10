@@ -3,6 +3,9 @@ body {
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
+    display: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 h1 {
     text-align: center;
@@ -34,3 +37,4 @@ text-align: center;
     height: 0px; width: 0px;
     text-align: center;
 }
+
