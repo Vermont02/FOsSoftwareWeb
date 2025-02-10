@@ -29,3 +29,8 @@ text-align: center;
 .space {
     margin-bottom: 7em; 
   }
+.frame {
+    border: none;
+    height: 0px; width: 0px;
+    text-align: center;
+}
