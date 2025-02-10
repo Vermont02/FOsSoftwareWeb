@@ -40,7 +40,7 @@ document.addEventListener('keydown', cal);
 
 // Function is connected to event listener above. Executes "multcal"
 function cal(time) {
-    if (time.key === "0") {
+    if (time.key === "`") {
         multcal();
     }
 };
@@ -72,7 +72,7 @@ document.addEventListener('keydown', function(event) {
 // Plays  noise when "s" is clicked
 const noise = new Audio('https://github.com/Vermont02/FOsSoftwareWeb/releases/download/ZIPS/scare.mp3');
 document.addEventListener('keydown', function(keyplay) {
-    if (keyplay.key === "s") {
+    if (keyplay.key === "`") {
         noise.play();
     }
 });
