@@ -77,4 +77,18 @@ document.addEventListener('keydown', function(keyplay) {
     }
 });
 
+// Password prompt
+const password = document.getElementById('password');
+const warning = document.getElementById('warning');
+const pin = "Vermont02"
+
+password.addEventListener('input', function() {
+    if (password.value === pin) {
+        warning.textContent = "Correct";
+        warning.style.color = 'green';
+    } else {
+        warning.textContent = "Incorrect";
+        warning.style.color = 'red'
+    }
+});
 
