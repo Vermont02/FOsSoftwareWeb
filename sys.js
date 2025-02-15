@@ -78,16 +78,18 @@ document.addEventListener('keydown', function(keyplay) {
 });
 
 // Password prompt
-const password = document.getElementById('password');
+const password = document.getElementById('lock');
 const warning = document.getElementById('warning');
 const pin = "Vermont02"
+const link = document.getElementById('link');
 
-password.addEventListener('input', function() {
+password.addEventListener('input', function aref() {
     if (password.value === pin) {
         warning.textContent = "Correct";
         warning.style.color = 'green';
+        link.location.href();
     } else {
-        warning.textContent = "Incorrect";
+        warning.textContent = "Try Again";
         warning.style.color = 'red'
     }
 });
