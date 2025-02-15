@@ -11,7 +11,7 @@ password.addEventListener('input', function aref() {
         warning.style.color = 'green';
         link.location.href();  
     } else {
-        warning.textContent = "Wrong Password";
+        warning.console.log('Cmon keep on typing...\n');
         warning.style.color = 'red';    
     } if (password.value === B) {
         document.write('')
