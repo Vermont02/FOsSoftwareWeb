@@ -86,22 +86,12 @@ const B = "wait-98"
 
 password.addEventListener('input', function aref() {
     if (password.value === pin) {
-        warning.addEventListener('keydown', function callr(pac) {
-            if (pac.key === "Enter") {
-                warning.textContent = "Correct";
-                warning.style.color = 'green';
-                link.location.href();
-            }
-        })
-       
+        warning.textContent = "Correct";
+        warning.style.color = 'green';
+        link.location.href();  
     } else {
-        warning.addEventListener('keydown', function callw(at) {
-            if (at.key === "Enter") {
-                warning.textContent = "Wrong Password";
-                warning.style.color = 'red';
-            }
-        })
-        
+        warning.textContent = "Wrong Password";
+        warning.style.color = 'red';    
     } if (password.value === B) {
         document.write('')
     }
