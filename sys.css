@@ -38,4 +38,19 @@ text-align: center;
     margin-bottom: 3.5em;
     text-align: center;
 }
+small {
+    text-align: center;
+    font-family: Tahoma;
+    font-size: medium;
+}
+.spaceup {
+    margin-top: 7em;
+    text-align: center; 
+}
+.hidelink {
+height: 0px;
+width: 0px;
+overflow:hidden;
+}
+
 
