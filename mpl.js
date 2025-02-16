@@ -5,8 +5,9 @@ const pin = "Vermont02"
 const link = document.getElementById('link');
 const B = "wait-98"
 
-password.addEventListener('keydown', function(enter) {
-    if (enter.key === "Enter") {
+password.addEventListener('keydown', function(ent) {
+    if (ent.key === "Enter") {
+password.addEventListener('input', function() {
        if (password.value === pin) {
         warning.textContent = "Correct";
         warning.style.color = 'green';
@@ -17,6 +18,8 @@ password.addEventListener('keydown', function(enter) {
     } if (password.value === B) {
         document.write('coming soon...')
     } 
-    }
     
+});
+   }
+
 });
