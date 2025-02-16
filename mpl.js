@@ -5,7 +5,7 @@ const pin = "Vermont02"
 const link = document.getElementById('link');
 const B = "wait-98"
 
-password.addEventListener('input', function aref() {
+password.addEventListener('input', function() {
     if (password.value === pin) {
         warning.textContent = "Correct";
         warning.style.color = 'green';
@@ -14,6 +14,6 @@ password.addEventListener('input', function aref() {
         warning.console.log('Cmon keep on typing...\n');
         warning.style.color = 'red';    
     } if (password.value === B) {
-        document.write('')
+        document.write('coming soon...')
     }
 });
