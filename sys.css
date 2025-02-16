@@ -37,6 +37,9 @@ text-align: center;
 .sspace {
     margin-bottom: 3.5em;
     text-align: center;
+    text-decoration: none;
+    border: none; 
+    outline: none; /
 }
 small {
     text-align: center;
