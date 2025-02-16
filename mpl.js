@@ -7,7 +7,6 @@ try {
         const password = document.getElementById('lock');
         const warning = document.getElementById('warning');
         const pin = "Vermont02"
-        const link = document.getElementById('link');
         const B = "wait-98"
 
         // Listens for press of key "Enter" on password field
@@ -17,7 +16,8 @@ try {
                 if (password.value === pin) {
                     warning.textContent = "Correct";
                     warning.style.color = 'green';
-                    link.href = "https://www.fossoftware.kesug.com/more-pages.html";
+                    window.location.href = "https://www.fossoftware.kesug.com/more-pages.html";
+                    return 0;
                 // If not   
                 } else {
                     console.log('Cmon keep on typing...');
