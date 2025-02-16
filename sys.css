@@ -51,9 +51,9 @@ small {
     text-align: center; 
 }
 .hidelink {
-height: 0px;
-width: 0px;
-overflow:hidden;
+    height: 0px;
+    width: 0px;
+    overflow: hidden;
 }
 .sspace a {
     display: inline-block;  
