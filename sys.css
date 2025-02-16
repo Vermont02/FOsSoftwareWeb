@@ -63,6 +63,12 @@ small {
     outline: none;          
     text-decoration: none;  
 }
+.left {
+    text-align: left;
+}
+.right {
+    text-align: right;
+}
 
 
 
