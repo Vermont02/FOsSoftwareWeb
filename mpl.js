@@ -17,19 +17,25 @@ try {
                 if (password.value === pin) {
                     warning.textContent = "Correct";
                     warning.style.color = 'green';
-                    link.href = "";
+                    link.href = "https://www.fossoftware.kesug.com/more-pages.html";
                 // If not   
                 } else {
                     console.log('Cmon keep on typing...');
                     console.log("")
+                    warning.textContent = "Invalid Password"
                     warning.style.color = 'red';    
-                } 
-                // We don't talk about this
+                }
+                // We don't talk about this one.
                 if (password.value === B) {
                     console.log('coming soon...')
                     console.log("")
                 } 
-    
+                // If nothing is typed
+                if (password.value === "") {
+                    warning.textContent = "Please enter a password"
+                    warning.style.color = 'red'
+                }
+        
             }
 
         });
