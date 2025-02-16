@@ -40,7 +40,6 @@ text-align: center;
     text-decoration: none;
     border: none; 
     outline: none;
-    display: flex;
 }
 small {
     text-align: center;
@@ -55,6 +54,10 @@ small {
 height: 0px;
 width: 0px;
 overflow:hidden;
+}
+.sspace a {
+    margin: 0;
+    padding: 0;
 }
 
 
