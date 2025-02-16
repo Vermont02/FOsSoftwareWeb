@@ -20,12 +20,14 @@ try {
                     link.href = "";
                 // If not   
                 } else {
-                    console.log('Cmon keep on typing...\n');
+                    console.log('Cmon keep on typing...');
+                    console.log("")
                     warning.style.color = 'red';    
                 } 
                 // We don't talk about this
                 if (password.value === B) {
                     console.log('coming soon...')
+                    console.log("")
                 } 
     
             }

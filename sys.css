@@ -18,7 +18,7 @@ p {
 text-align: center;
 }
 .button {
-    width: 75x;
+    width: 75px;
     height: 37.5px;
     font-size: large;
     font-family: Tahoma;
@@ -39,7 +39,9 @@ text-align: center;
     text-align: center;
     text-decoration: none;
     border: none; 
-    outline: none; /
+    outline: none;
+    display: flex;
+    justify-content: space-between; 
 }
 small {
     text-align: center;
