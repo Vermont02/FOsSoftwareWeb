@@ -18,8 +18,8 @@ p {
 text-align: center;
 }
 .button {
-    width: 75px;
-    height: 37.5px;
+    width: 75vw;
+    height: 37.5vw;
     font-size: large;
     font-family: Tahoma;
 }
@@ -27,15 +27,15 @@ text-align: center;
     font-family: Tahoma;
 }
 .space {
-    margin-bottom: 7em; 
+    margin-bottom: 7vw; 
 }
 .frame {
     border: none;
-    height: 300px; width: 200px;
+    height: 300vw; width: 200vw;
     text-align: center;
 }
 .sspace {
-    margin-bottom: 3.5em;
+    margin-bottom: 3.5vw;
     text-align: center;
     text-decoration: none;
     border: none; 
@@ -47,12 +47,12 @@ small {
     font-size: medium;
 }
 .spaceup {
-    margin-top: 7em;
+    margin-top: 7vw;
     text-align: center; 
 }
 .hidelink {
-    height: 0px;
-    width: 0px;
+    height: 0vw;
+    width: 0vw;
     overflow: hidden;
 }
 .sspace a {
@@ -65,15 +65,15 @@ small {
 }
 .left {
     background-color: gray;
-    border: 3px inset;
+    border: 3vw inset;
     display: inline-block;
-    margin-right: 73em;
+    margin-right: 73vw;
 
 }
 .right {
-    margin-left: 73em;
-    border-radius: 8px;
-    border: 3px inset;
+    margin-left: 73vw;
+    border-radius: 8vw;
+    border: 3vw inset;
 
 }
 
