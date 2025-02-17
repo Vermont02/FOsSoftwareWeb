@@ -64,7 +64,6 @@ small {
     text-decoration: none;  
 }
 .left {
-    font-size: 5vw;
     background-color: gray;
     border: 3px inset;
     display: inline-block;
