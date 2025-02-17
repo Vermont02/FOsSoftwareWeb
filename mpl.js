@@ -40,6 +40,20 @@ try {
 
         });
     });
+
+    function mobileDetect() {
+        return /iPhone|iPad|Mobi|Android/i.test(navigator.userAgent);
+    }
+
+    function unsup() {
+        if (mobileDetect()) {
+            alert('This site is unsupported on your device.');
+        } 
+        unsup();
+    }
+    
+    unsup();
+    
 } catch (error) {
     console.error("Something went wrong 'mpl.js':", error);
 }

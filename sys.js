@@ -77,4 +77,17 @@ document.addEventListener('keydown', function(keyplay) {
     }
 });
 
+function mobileDetect() {
+    return /iPhone|iPad|Mobi|Android/i.test(navigator.userAgent);
+}
+
+function unsup() {
+    if (mobileDetect()) {
+        alert('This site is unsupported on your device.');
+    } 
+    unsup();
+}
+
+unsup();
+
 
