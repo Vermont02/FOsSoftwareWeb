@@ -8,7 +8,19 @@ try {
         console.log(Date());
         correctsound.play();
     });
-    
-} catch (error) {
-    console.log('error in "more-pages.js":', error)
+
+    function windowsize() {
+        const min = 600;
+        if (window.innerWidth < min) {
+            alert('The window is to small. Some content may not be displayed correctly. The window will now be resized.');
+            window.resizeTo(1920, 1080)
+        }
+    }
+
+    window.addEventListener('resize', windowsize);
+
+    windowsize();
+
+} catch (wrongdoing) {
+    console.log('error in "more-pages.js":', wrongdoing)
 }
