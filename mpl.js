@@ -4,7 +4,6 @@ try {
     document.addEventListener('DOMContentLoaded', function() {
         /* Words that are connected to things that do things 
         (this is supposed to be readable aint it?) */
-        const correctsound = new Audio ('https://github.com/Vermont02/FOsSoftwareWeb/releases/download/ZIPS/Microsoft.Windows.7.Startup.Sound.mp3')
         const password = document.getElementById('lock');
         const warning = document.getElementById('warning');
         const pin = "Vermont02"
@@ -17,7 +16,6 @@ try {
                 if (password.value === pin) {
                     warning.textContent = "Correct";
                     warning.style.color = 'green';
-                    correctsound.play();
                     window.location.href = "https://www.fossoftware.kesug.com/more-pages.html";
                     return 0;
                 // If not   
