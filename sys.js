@@ -90,11 +90,11 @@ function unsup() {
 
 unsup();
 
-const cursorImage = document.getElementById('mouse');
+const cursor = document.getElementById('mouse');
     
-document.addEventListener('mousemove', (e) => {
-  cursorImage.style.left = `${e.pageX}px`;
-  cursorImage.style.top = `${e.pageY}px`;
+document.addEventListener('mousemove', (m) => {
+  cursor.style.left = `${m.pageX}px`;
+  cursor.style.top = `${m.pageY}px`;
 });
 
 
