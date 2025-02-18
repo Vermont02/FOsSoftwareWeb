@@ -76,13 +76,7 @@ small {
     border: 3px inset;
 
 }
-#cursor-image {
-    position: absolute;
-    width: 30px; /* adjust size */
-    height: 30px; /* adjust size */
-    pointer-events: none; /* prevent interference with clicks */
-    z-index: 1000; /* ensures it stays on top */
-  }
+
   
 
 
