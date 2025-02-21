@@ -22,7 +22,7 @@ try {
     
     unsup();
 
-    const win = document.getElementById('windo');
+    const win = document.getElementById('winds');
 
     win.onmousedown = function(aero) {
       let offsetX = aero.clientX - win.getBoundingClientRect().left;
