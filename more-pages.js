@@ -35,7 +35,7 @@ function dragElement(elmnt) {
   }
 
   function dragMouseDown(e) {
-    e = e || window.event;
+    e = e || window.e;
     e.preventDefault();
 
     pos3 = e.clientX;
@@ -46,7 +46,7 @@ function dragElement(elmnt) {
   }
 
   function elementDrag(e) {
-    e = e || window.event;
+    e = e || window.e;
     e.preventDefault();
 
     pos1 = pos3 - e.clientX;
