@@ -22,21 +22,27 @@ try {
     
     unsup();
 
-    const win = document.getElementById('window');
+    const win = document.getElementById('windo');
 
     win.onmousedown = function(aero) {
-        let offsX = aero.clientX - win.offsetLeft;
-        let offsY = aero.clientY - win.offsetTop
+      let offsetX = aero.clientX - win.getBoundingClientRect().left;
+      let offsetY = aero.clientY - win.getBoundingClientRect().top;
 
-        document.onmousemove = function(aero) {
-            win.style.left = aero.clientX - offsX + 'px'
-            win.style.top = aero.clientY - offsY + 'px';
-        };
+      function moveWith(aero) {
+        win.style.left = aero.clientX - offsetX + 'px';
+        win.style.top = aero.clientY - offsetY + 'px';
+      }
 
-        document.onmouseup = function() {
-            document.onmousemove = null;
-            document.onmouseup = null;
-        };
+      document.addEventListener('mousemove', moveWith);
+
+      win.onmouseup = function() {
+        document.removeEventListener('mousemove', moveWith);
+        win.onmouseup = null;
+      };
+    };
+
+    win.ondragstart = function() {
+      return false;
     };
 
 } catch (wrongdoing) {
