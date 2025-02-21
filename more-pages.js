@@ -22,7 +22,7 @@ try {
     
     unsup();
 
-    let win = document.getElementById('window');
+    const win = document.getElementById('window');
 
     win.onmousedown = function(aero) {
         let offsX = aero.clientX - win.offsetLeft;
@@ -34,7 +34,8 @@ try {
         };
 
         document.onmouseup = function() {
-            document.onmousemove = document.onmouseup = null;
+            document.onmousemove = null;
+            document.onmouseup = null;
         };
     };
 
