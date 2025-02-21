@@ -74,7 +74,10 @@ small {
     margin-left: 73vw;
     border-radius: 8px;
     border: 3px inset;
-
+} #window {
+    width: 300px;
+    cursor: move;
+    position: absolute;
 }
 
   

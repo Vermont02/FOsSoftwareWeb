@@ -22,6 +22,22 @@ try {
     
     unsup();
 
+    let win = document.getElementById('window');
+
+    win.onmousedown = function(aero) {
+        let offsX = aero.clientX - win.offsetLeft;
+        let offsY = aero.clientY - win.offsetTop
+
+        document.onmousemove = function(aero) {
+            win.style.left = aero.clientX - offsX + 'px'
+            win.style.top = aero.clientY - offsY + 'px';
+        };
+
+        document.onmouseup = function() {
+            document.onmousemove = document.onmouseup = null;
+        };
+    };
+
 } catch (wrongdoing) {
     console.log('error in "more-pages.js":', wrongdoing)
 }
