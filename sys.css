@@ -74,8 +74,34 @@ small {
     margin-left: 73vw;
     border-radius: 8px;
     border: 3px inset;
-} .draggable {
+}  .draggable {
     position: absolute;
+    width: 300px;            /* Adjust width */
+    height: 200px;           /* Adjust height */
+    background-color: transparent;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    top: 100px;
+    left: 100px;
+}
+
+.header {
+    height: 30px;                            /* Height of the draggable header */
+    cursor: move;                            /* Indicate that the header is draggable */
+    background-color: rgba(0, 0, 0, 0.5);   /* Semi-transparent background for the header */
+    width: 100%;
+    position: absolute;
+    top: 0;                                  /* Ensure it's at the top of the window */
+}
+
+.content {
+    padding: 0;
+    margin-top: 30px;    /* Add margin to make space for the header */
+}
+
+.window-img {
+    width: 100%;    /* Make the image fill the entire window */
+    height: auto;   /* Maintain aspect ratio */
 }
 
   
