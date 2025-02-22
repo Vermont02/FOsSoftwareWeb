@@ -22,48 +22,32 @@ try {
     
     unsup();
 
-dragElement(document.getElementById("wind"));
+    // Get the draggable window and the header
+const draggable = document.getElementById('draggable');
+const header = document.getElementById('header');
 
-function dragElement(elmnt) {
-  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-  if (document.getElementById(elmnt.id + "header")) {
-  
-    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
-  } else {
+let isDragging = false;
+let offsetX, offsetY;
 
-    elmnt.onmousedown = dragMouseDown;
-  }
+// Mouse down event for starting the drag
+header.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    offsetX = e.clientX - draggable.getBoundingClientRect().left;
+    offsetY = e.clientY - draggable.getBoundingClientRect().top;
+});
 
-  function dragMouseDown(e) {
-    e = e || window.e;
-    e.preventDefault();
+// Mouse move event for dragging the window
+document.addEventListener('mousemove', (e) => {
+    if (isDragging) {
+        draggable.style.left = e.clientX - offsetX + 'px';
+        draggable.style.top = e.clientY - offsetY + 'px';
+    }
+});
 
-    pos3 = e.clientX;
-    pos4 = e.clientY;
-    document.onmouseup = closeDragElement;
- 
-    document.onmousemove = elementDrag;
-  }
-
-  function elementDrag(e) {
-    e = e || window.e;
-    e.preventDefault();
-
-    pos1 = pos3 - e.clientX;
-    pos2 = pos4 - e.clientY;
-    pos3 = e.clientX;
-    pos4 = e.clientY;
-
-    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
-    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
-  }
-
-  function closeDragElement() {
-
-    document.onmouseup = null;
-    document.onmousemove = null;
-  }
-}
+// Mouse up event for stopping the drag
+document.addEventListener('mouseup', () => {
+    isDragging = false;
+});
 
 } catch (wrongdoing) {
     console.log('error in "more-pages.js":', wrongdoing)
