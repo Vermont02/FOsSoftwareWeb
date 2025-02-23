@@ -22,34 +22,49 @@ try {
     
     unsup();
 
-    // Variables for dragging
-    const draggable = document.getElementById('draggable');
-    const header = document.getElementById('header');
-    let isDragging = false;
-    let offsetX, offsetY;
+    // Make the DIV element draggable:
+dragElement(document.getElementById("mydiv"));
 
-    // Mouse down event to start dragging
-    header.addEventListener('mousedown', (e) => {
-        isDragging = true;
-        offsetX = e.clientX - draggable.getBoundingClientRect().left;
-        offsetY = e.clientY - draggable.getBoundingClientRect().top;
-        // Change cursor when dragging
-        document.body.style.cursor = "move";
-    });
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "header")) {
+    // if present, the header is where you move the DIV from:
+    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  } else {
+    // otherwise, move the DIV from anywhere inside the DIV:
+    elmnt.onmousedown = dragMouseDown;
+  }
 
-    // Mouse move event to drag the window
-    document.addEventListener('mousemove', (e) => {
-        if (isDragging) {
-            draggable.style.left = e.clientX - offsetX + 'px';
-            draggable.style.top = e.clientY - offsetY + 'px';
-        }
-    });
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
 
-    // Mouse up event to stop dragging
-    document.addEventListener('mouseup', () => {
-        isDragging = false;
-        document.body.style.cursor = "default"; // Reset cursor
-    });
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    // stop moving when mouse button is released:
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
 
 } catch (wrongdoing) {
     console.log('error in "more-pages.js":', wrongdoing)
