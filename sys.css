@@ -5,7 +5,7 @@ body {
     background-size: cover;
     margin: 0;
     padding: 0;
-    cursor: url('https://github.com/Vermont02/FOsSoftwareWeb/releases/download/ZIPS/cursor.svg'), nw-resize;
+    cursor: url('https://github.com/Vermont02/FOsSoftwareWeb/releases/download/ZIPS/cursor.svg'), auto;
 }
 h1 {
     text-align: center;
@@ -19,18 +19,18 @@ p {
 }
 .cent {
 text-align: center;
-cursor: url('https://github.com/Vermont02/FOsSoftwareWeb/releases/download/ZIPS/cursor.svg'), nw-resize;
+cursor: url('https://github.com/Vermont02/FOsSoftwareWeb/releases/download/ZIPS/cursor.svg'), auto;
 }
 .button {
     width: 75px;
     height: 37.5px;
     font-size: large;
     font-family: Tahoma;
-    cursor: url('https://github.com/Vermont02/FOsSoftwareWeb/releases/download/ZIPS/cursor.svg'), nw-resize;
+    cursor: url('https://github.com/Vermont02/FOsSoftwareWeb/releases/download/ZIPS/cursor.svg'), auto;
 }
 .buttonsmall {
     font-family: Tahoma;
-    cursor: url('https://github.com/Vermont02/FOsSoftwareWeb/releases/download/ZIPS/cursor.svg'), nw-resize;
+    cursor: url('https://github.com/Vermont02/FOsSoftwareWeb/releases/download/ZIPS/cursor.svg'), auto;
 }
 .space {
     margin-bottom: 7em;
@@ -39,7 +39,7 @@ cursor: url('https://github.com/Vermont02/FOsSoftwareWeb/releases/download/ZIPS/
     border: none;
     height: 300px; width: 200px;
     text-align: center;
-    cursor: url('https://github.com/Vermont02/FOsSoftwareWeb/releases/download/ZIPS/cursor.svg'), nw-resize;
+    cursor: url('https://github.com/Vermont02/FOsSoftwareWeb/releases/download/ZIPS/cursor.svg'), auto;
 }
 .sspace {
     margin-bottom: 3.5em;
@@ -47,7 +47,7 @@ cursor: url('https://github.com/Vermont02/FOsSoftwareWeb/releases/download/ZIPS/
     text-decoration: none;
     border: none; 
     outline: none;
-    cursor: url('https://github.com/Vermont02/FOsSoftwareWeb/releases/download/ZIPS/cursor.svg'), nw-resize;
+    cursor: url('https://github.com/Vermont02/FOsSoftwareWeb/releases/download/ZIPS/cursor.svg'), auto;
 }
 small {
     text-align: center;
@@ -70,7 +70,7 @@ small {
     padding: 0;             
     outline: none;          
     text-decoration: none;
-    cursor: url('https://github.com/Vermont02/FOsSoftwareWeb/releases/download/ZIPS/cursor.svg'), nw-resize;
+    cursor: url('https://github.com/Vermont02/FOsSoftwareWeb/releases/download/ZIPS/cursor.svg'), auto;
 }
 .left {
     background-color: gray;
@@ -89,14 +89,14 @@ small {
     background-color: transparent;
     text-align: center;
     font-family: Tahoma;
-    cursor: url('https://github.com/Vermont02/FOsSoftwareWeb/releases/download/ZIPS/cursor.svg'), nw-resize;
+    cursor: url('https://github.com/Vermont02/FOsSoftwareWeb/releases/download/ZIPS/cursor.svg'), auto;
 }
 #windowHeader {
     padding: 10px;
     z-index: 10;
     background-color: transparent;
     font-family: Tahoma;
-    cursor: url('https://github.com/Vermont02/FOsSoftwareWeb/releases/download/ZIPS/cursor.svg'), nw-resize;
+    cursor: url('https://github.com/Vermont02/FOsSoftwareWeb/releases/download/ZIPS/cursor.svg'), auto;
 }
 #window p {
     margin: 0;
@@ -104,8 +104,14 @@ small {
     background: transparent;
     text-align: center;
     font-family: Tahoma;
-    cursor: url('https://github.com/Vermont02/FOsSoftwareWeb/releases/download/ZIPS/cursor.svg'), nw-resize;
+    cursor: url('https://github.com/Vermont02/FOsSoftwareWeb/releases/download/ZIPS/cursor.svg'), auto;
 }
+.backbtn {
+    margin-top: 3em;
+    margin-left: 3em;
+    cursor: wait;
+}
+
 
   
 
