@@ -5,7 +5,7 @@ body {
     background-size: cover;
     margin: 0;
     padding: 0;
-    cursor: url('https://github.com/Vermont02/FOsSoftwareWeb/releases/download/ZIPS/cursor.svg'), url('https://github.com/Vermont02/FOsSoftwareWeb/releases/download/ZIPS/cursor.svg');
+    cursor: url('https://github.com/Vermont02/FOsSoftwareWeb/releases/download/ZIPS/cursor.svg'), nw-resize;
 }
 h1 {
     text-align: center;
@@ -19,23 +19,27 @@ p {
 }
 .cent {
 text-align: center;
+cursor: url('https://github.com/Vermont02/FOsSoftwareWeb/releases/download/ZIPS/cursor.svg'), nw-resize;
 }
 .button {
     width: 75px;
     height: 37.5px;
     font-size: large;
     font-family: Tahoma;
+    cursor: url('https://github.com/Vermont02/FOsSoftwareWeb/releases/download/ZIPS/cursor.svg'), nw-resize;
 }
 .buttonsmall {
     font-family: Tahoma;
+    cursor: url('https://github.com/Vermont02/FOsSoftwareWeb/releases/download/ZIPS/cursor.svg'), nw-resize;
 }
 .space {
-    margin-bottom: 7em; 
+    margin-bottom: 7em;
 }
 .frame {
     border: none;
     height: 300px; width: 200px;
     text-align: center;
+    cursor: url('https://github.com/Vermont02/FOsSoftwareWeb/releases/download/ZIPS/cursor.svg'), nw-resize;
 }
 .sspace {
     margin-bottom: 3.5em;
@@ -71,7 +75,6 @@ small {
     border: 3px inset;
     display: inline-block;
     margin-right: 73vw;
-
 }
 .right {
     margin-left: 73vw;
@@ -84,12 +87,14 @@ small {
     background-color: transparent;
     text-align: center;
     font-family: Tahoma;
+    cursor: url('https://github.com/Vermont02/FOsSoftwareWeb/releases/download/ZIPS/cursor.svg'), nw-resize;
 }
 #windowHeader {
     padding: 10px;
     z-index: 10;
     background-color: transparent;
     font-family: Tahoma;
+    cursor: url('https://github.com/Vermont02/FOsSoftwareWeb/releases/download/ZIPS/cursor.svg'), nw-resize;
 }
 #window p {
     margin: 0;
@@ -97,6 +102,7 @@ small {
     background: transparent;
     text-align: center;
     font-family: Tahoma;
+    cursor: url('https://github.com/Vermont02/FOsSoftwareWeb/releases/download/ZIPS/cursor.svg'), nw-resize;
 }
 
   
