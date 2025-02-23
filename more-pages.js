@@ -7,6 +7,7 @@ try {
         console.log('HTML DOM Loaded At...');
         console.log(Date());
         correctsound.play();
+        dragElement(document.getElementById("mydiv"));
     });
 
     function mobileDetect() {
@@ -65,6 +66,8 @@ function dragElement(elmnt) {
     document.onmousemove = null;
   }
 }
+
+
 
 } catch (wrongdoing) {
     console.log('error in "more-pages.js":', wrongdoing)
