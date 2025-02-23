@@ -20,15 +20,13 @@ try {
                     return 0;
                 // If not   
                 } else {
-                    console.log('Cmon keep on typing...');
-                    console.log("")
+                    console.log('Cmon keep on typing...\n');
                     warning.textContent = "Invalid Password"
                     warning.style.color = 'red';    
                 }
                 // We don't talk about this one.
                 if (password.value === B) {
-                    console.log('coming soon...')
-                    console.log("")
+                    console.log('coming soon...\n')
                 } 
                 // If nothing is typed
                 if (password.value === "") {
