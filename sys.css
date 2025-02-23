@@ -5,7 +5,7 @@ body {
     background-size: cover;
     margin: 0;
     padding: 0;
-    cursor: url('https://github.com/Vermont02/FOsSoftwareWeb/releases/download/ZIPS/Dollar.gif'), auto;
+    cursor: url('https://github.com/Vermont02/FOsSoftwareWeb/releases/download/ZIPS/cursor.svg'), url('https://github.com/Vermont02/FOsSoftwareWeb/releases/download/ZIPS/cursor.svg');
 }
 h1 {
     text-align: center;
@@ -78,23 +78,25 @@ small {
     border-radius: 8px;
     border: 3px inset;
 } 
-#mydiv {
+#window {
     position: absolute;
     z-index: 9;
     background-color: transparent;
     text-align: center;
-  }
-  #mydivheader {
+    font-family: Tahoma;
+}
+#windowHeader {
     padding: 10px;
     z-index: 10;
     background-color: transparent;
-    color: transparent;
-  }
-  #mydiv p {
+    font-family: Tahoma;
+}
+#window p {
     margin: 0;
     padding: 15px;
     background: transparent;
     text-align: center;
+    font-family: Tahoma;
 }
 
   
