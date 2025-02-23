@@ -47,6 +47,7 @@ cursor: url('https://github.com/Vermont02/FOsSoftwareWeb/releases/download/ZIPS/
     text-decoration: none;
     border: none; 
     outline: none;
+    cursor: url('https://github.com/Vermont02/FOsSoftwareWeb/releases/download/ZIPS/cursor.svg'), nw-resize;
 }
 small {
     text-align: center;
@@ -68,7 +69,8 @@ small {
     margin: 0;              
     padding: 0;             
     outline: none;          
-    text-decoration: none;  
+    text-decoration: none;
+    cursor: url('https://github.com/Vermont02/FOsSoftwareWeb/releases/download/ZIPS/cursor.svg'), nw-resize;
 }
 .left {
     background-color: gray;
