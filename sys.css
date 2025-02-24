@@ -1,12 +1,12 @@
 body {
+    background-color: black;
     background-image: url('https://github.com/Vermont02/FOsSoftwareWeb/releases/download/ZIPS/P5230469.JPG');
-    background-repeat: repeat;
+    background-repeat: space;
     background-attachment: scroll;
     background-size: cover;
     margin: 0;
     padding: 0;
     cursor: url('https://github.com/Vermont02/FOsSoftwareWeb/releases/download/ZIPS/cursor.svg'), auto;
-
 }
 h1 {
     text-align: center;
