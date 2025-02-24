@@ -1,7 +1,7 @@
 body {
     background-image: url('https://github.com/Vermont02/FOsSoftwareWeb/releases/download/ZIPS/P5230469.JPG');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-repeat: repeat;
+    background-attachment: scroll;
     background-size: cover;
     margin: 0;
     padding: 0;
