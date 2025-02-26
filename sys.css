@@ -8,9 +8,6 @@ body {
 }
 html, body, * {
     cursor: url('https://github.com/Vermont02/FOsSoftwareWeb/releases/download/ZIPS/Mouse.png'), auto !important;
-    height: 100%;
-    margin: 0;
-    padding: 0;
 }
 h1 {
     text-align: center;
