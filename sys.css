@@ -1,12 +1,11 @@
 body {
-    background-color: gray;
-    background-image: url('https://github.com/Vermont02/FOsSoftwareWeb/releases/download/ZIPS/P5230469.JPG');
+    background-image: url('https://github.com/Vermont02/FOsSoftwareWeb/releases/download/ZIPS/P5230469.JPG'), url('https://github.com/Vermont02/FOsSoftwareWeb/releases/download/ZIPS/Back2FOs.png');
     background-repeat: space;
     background-attachment: scroll;
     background-size: cover;
     margin: 0;
     padding: 0;
-    cursor: url('https://github.com/Vermont02/FOsSoftwareWeb/releases/download/ZIPS/cursor.svg'), auto;
+    cursor: url('https://github.com/Vermont02/FOsSoftwareWeb/releases/download/ZIPS/Mouse.png'), auto;
 }
 h1 {
     text-align: center;
