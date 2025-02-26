@@ -5,7 +5,10 @@ body {
     background-size: cover;
     margin: 0;
     padding: 0;
-    cursor: url('https://github.com/Vermont02/FOsSoftwareWeb/releases/download/ZIPS/Mouse.png'), auto;
+}
+html, body, * {
+    cursor: url('https://github.com/Vermont02/FOsSoftwareWeb/releases/download/ZIPS/Mouse.png'), auto !important;
+
 }
 h1 {
     text-align: center;
