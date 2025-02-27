@@ -1,0 +1,21 @@
+body {
+	background-color: black;
+	color: lime;
+	font-family: monospace;
+} 
+input {
+	background-color: black;
+	color: lime;
+	outline: none;
+	border: none;
+}
+textarea {
+	background-color: black;
+	color: lime;
+	height: 590;
+	width: 500;
+	outline: none;
+	resize: none;
+	border: none;
+}
+
