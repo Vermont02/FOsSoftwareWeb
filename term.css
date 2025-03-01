@@ -26,4 +26,7 @@ textarea {
 .terminalLog::-webkit-scrollbar {
 	width: 0px;
 }
+input, textarea {
+    caret-color: transparent;
+}
 
