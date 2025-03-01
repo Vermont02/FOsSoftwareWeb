@@ -15,11 +15,10 @@ textarea {
 	outline: none;
 	resize: none;
 	border: none;
-	overflow: hidden;
 }
 .terminalLog {
-	height: 5900;
-	width: 5000;
+	height: 590px;
+	width: 500px;
 	resize: none;
 	scrollbar-width: thin;
 	scrollbar-color: transparent transparent;
