@@ -62,19 +62,21 @@ function timecom() {
 function loccom() {
   let disp = input.value.split(" ")[1];
 
-  output.value += user + disp + '\n' + notf + '\n';
+  let notf = "";
 
   if (disp) {
   
     let notf = "Redirecting..."
   
-    window.open(disp);
+    window.open(disp, "_Blank");
 
     output.value += user + disp + '\n' + notf + '\n';
+
   } else {
 
-      output.value += user + disp + '\n' + notf + '\n' + "error: no URL specified";
+      output.value += user + disp + '\n' + "error: no URL specified" + '\n';
   }
 
   input.value = "";
+
 };
