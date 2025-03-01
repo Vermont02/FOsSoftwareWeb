@@ -28,7 +28,7 @@ function hcom() {
   let mes = input.value;
   let helM = "help goes here";
 
-  output.value += `FOs-Software:~ User$ ${mes} \n ${helM} \n`;
+  output.value += "FOs-Software:~ User$ " + mes + '\n' + helM + '\n';
 
   input.value = "";
 };
