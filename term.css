@@ -18,8 +18,8 @@ textarea {
 	overflow: hidden;
 }
 .terminalLog {
-	height: 590;
-	width: 500;
+	height: 5900;
+	width: 5000;
 	resize: none;
 	scrollbar-width: thin;
 	scrollbar-color: transparent transparent;
