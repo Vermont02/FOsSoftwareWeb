@@ -9,6 +9,7 @@ input {
 	outline: none;
 	border: none;
 	font-family: monospace;
+	width: 500px;
 }
 textarea {
 	background-color: black;
