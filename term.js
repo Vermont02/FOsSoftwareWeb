@@ -60,7 +60,7 @@ function timecom() {
 };
 
 function loccom() {
-  let disp = input.value;
+  let disp = input.value.split(" ")[1];
   let notf = "";
 
   if (disp) {
