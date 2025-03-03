@@ -1,3 +1,4 @@
+let timelog = document.getElementById('timelog');
 let input = document.getElementById('terminput');
 let output = document.getElementById('termoutput');
 let user = "FOs-Software:~ User$ ";
@@ -7,6 +8,8 @@ input.addEventListener('keydown', function(e) {
       commands();
   }
 });
+
+document.addEventListener('DOMContentLoaded', timedisp());
 
 function commands() {
   if (input.value === "--help" || input.value === "--h") {
@@ -46,6 +49,11 @@ function hcom() {
   input.value = "";
 };
 
+function timedisp() {
+  let timedisplay = new Date().toLocaleString();
+  timelog.value = `Last login:${timedisplay}`
+}; 
+
 function noncom() {
   let disp = input.value;
   
@@ -58,8 +66,7 @@ function timecom() {
   let disp = input.value;
   let notf = new Date().toLocaleString();
 
-  output.value += user + '\n' + notf + '\n';
-
+  output.value += user + disp + '\n' + notf + '\n';
   input.value = "";
 };
 
