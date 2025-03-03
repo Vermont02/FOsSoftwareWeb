@@ -97,7 +97,7 @@ function homecom() {
 
 function ldircom() {
   let disp = input.value;
-  let notf = "#########\n\nfossoftware\n|\n|\n|___/mpl.html\n    |\n    |\n    |___more-pages.html\n    |\n    |\n    |___term.html\n\n##########"
+  let notf = "#########\n\nfossoftware\n|\n|\n|___/mpl.html\n    |\n    |\n    |___/more-pages.html\n    |\n    |\n    |___/term.html\n\n##########"
 
   output.value += `${user}${disp}\n${notf}\n`
 
