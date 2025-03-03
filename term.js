@@ -17,6 +17,10 @@ function commands() {
     timecom();
   } else if (input.value.startsWith("--loc")) {
     loccom();
+  } else if (input.value === "--home" || input.value === "--fosstart") {
+    homecom();
+  } else if (input.value === "--ldir") {
+    ldircom();
   } else {
   err();
   }
@@ -35,7 +39,7 @@ function err() {
 
 function hcom() {
   let disp = input.value;
-  let notf = "--help [-h]\nPrints this message.\n\n--time\nPrints current time.\n\n--loc [URL]\nRedirects user to selected URL\n\n";
+  let notf = "--help (-h)\nPrints this message.\n\n--time\nPrints current time.\n\n--loc [URL]\nRedirects user to selected URL.\n\n--home (--fosstart)\nSends user to FOs home page.\n\n--ldir\nShows List of pages on FOs website.\n\n";
 
   output.value += user + disp + '\n' + notf + '\n';
 
@@ -78,4 +82,22 @@ function loccom() {
 
   input.value = "";
 
+};
+
+function homecom() {
+  let disp = input.value;
+  let notf = "Redirecting to home page..."
+
+  output.value += user + disp + '\n' + notf + '\n';
+
+  output.value += ".\n..\n...\n....\n...."
+
+  window.open(www.fossoftware.kesug.com, "_Blank"); 
+};
+
+function ldircom() {
+  let disp = input.value;
+  let notf = "#########\n\nfossoftware\n|\n|\n|___/mpl.html\n    |\n    |\n    |___more-pages.html\n    |\n    |\n    |___term.html\n\n##########"
+
+  output.value += `${user}${disp}\n${notf}\n`
 };
