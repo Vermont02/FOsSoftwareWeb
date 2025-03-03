@@ -90,9 +90,9 @@ function homecom() {
 
   output.value += user + disp + '\n' + notf + '\n';
 
-  output.value += ".\n..\n...\n....\n...."
+  window.open("https://www.fossoftware.kesug.com", "_Blank");
 
-  window.open(www.fossoftware.kesug.com, "_Blank"); 
+  input.value = "";
 };
 
 function ldircom() {
@@ -100,4 +100,6 @@ function ldircom() {
   let notf = "#########\n\nfossoftware\n|\n|\n|___/mpl.html\n    |\n    |\n    |___more-pages.html\n    |\n    |\n    |___term.html\n\n##########"
 
   output.value += `${user}${disp}\n${notf}\n`
+
+  input.value = "";
 };
