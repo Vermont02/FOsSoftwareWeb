@@ -9,7 +9,9 @@ input.addEventListener('keydown', function(e) {
   }
 });
 
-document.addEventListener('DOMContentLoaded', timedisp());
+document.addEventListener('DOMContentLoaded', function() {
+  timedisp();
+});
 
 function commands() {
   if (input.value === "--help" || input.value === "--h") {
