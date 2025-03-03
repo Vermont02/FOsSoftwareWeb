@@ -26,6 +26,8 @@ function commands() {
     homecom();
   } else if (input.value === "--ldir") {
     ldircom();
+  } else if (input.value.startsWith("--downld")) {
+    downldcom();
   } else {
   err();
   }
@@ -75,6 +77,8 @@ function timecom() {
 function loccom() {
   let disp = input.value.split(" ")[1];
   let notf = "";
+  let message = input.value; 
+
 
   if (disp) {
   
@@ -82,11 +86,11 @@ function loccom() {
   
     window.open(disp, "_Blank");
 
-    output.value += user + disp + '\n' + notf + '\n';
+    output.value += user + message + '\n' + notf + '\n';
 
   } else {
 
-      output.value += user + disp + '\n' + "error: no URL specified" + '\n';
+      output.value += user + message + '\n' + "error: no URL specified" + '\n';
   }
 
   input.value = "";
@@ -108,7 +112,29 @@ function ldircom() {
   let disp = input.value;
   let notf = "#########\n\nfossoftware\n|\n|\n|___/mpl.html\n    |\n    |\n    |___/more-pages.html\n    |\n    |\n    |___/term.html\n\n##########"
 
-  output.value += `${user}${disp}\n${notf}\n`
+  output.value += `${user}${disp}\n${notf}\n`;
 
   input.value = "";
+};
+
+function downldcom() {
+  let disp = input.value.split(" ")[1];
+  let message = input.value;
+
+  if (disp) {
+    let nameOfFile = disp.split("/").pop();
+
+    getFileURL(disp, nameOfFile);
+    output.value += `${user}${message}\nDownload started...\n`;
+  } else {
+    output.value += `${user}${message}\nerror: No URL specified\n`;
+  } 
+  input.value = "";
+};
+
+function getFileURL(URL, nameOfFile) {
+  const Dlink = document.createElement('a');
+  Dlink.href = URL;
+  Dlink.download = nameOfFile;
+  Dlink.click(); 
 };
