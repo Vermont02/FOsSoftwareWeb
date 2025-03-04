@@ -4,12 +4,21 @@ body {
     background-attachment: scroll;
     background-size: cover;
     background-position: top, bottom;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+html {
+    margin: 0;                              
+    padding: 0;                             
+    overflow-x: hidden;
+    height: 100%;
 }
 html, body, * {
     cursor: url('https://github.com/Vermont02/FOsSoftwareWeb/releases/download/ZIPS/Mouse.png'), auto !important;
     margin: 0;
     padding: 0;
-    height: 100%;
     overflow-x: hidden;
 }
 h1 {
