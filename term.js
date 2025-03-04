@@ -42,6 +42,8 @@ function err() {
   output.value += user + disp + '\n' + notf + '\n';
 
   input.value = "";
+
+  scrollB();
 };
 
 function hcom() {
@@ -51,7 +53,14 @@ function hcom() {
   output.value += user + disp + '\n' + notf + '\n';
 
   input.value = "";
+
+  scrollB();
 };
+
+function scrollB() {
+  output.scrollTop = output.scrollHeight;
+}
+
 
 function timedisp() {
   let timedisplay = new Date().toLocaleString();
@@ -64,6 +73,8 @@ function noncom() {
   output.value += user + disp + '\n';
 
   input.value = "";
+
+  scrollB();
 }; 
 
 function timecom() {
@@ -72,6 +83,8 @@ function timecom() {
 
   output.value += user + disp + '\n' + notf + '\n';
   input.value = "";
+
+  scrollB();
 };
 
 function loccom() {
@@ -95,6 +108,7 @@ function loccom() {
 
   input.value = "";
 
+  scrollB();
 };
 
 function homecom() {
@@ -106,6 +120,8 @@ function homecom() {
   window.open("https://www.fossoftware.kesug.com", "_Blank");
 
   input.value = "";
+
+  scrollB();
 };
 
 function ldircom() {
@@ -115,6 +131,8 @@ function ldircom() {
   output.value += `${user}${disp}\n${notf}\n`;
 
   input.value = "";
+
+  scrollB();
 };
 
 function downldcom() {
@@ -130,11 +148,13 @@ function downldcom() {
     output.value += `${user}${message}\nerror: No URL specified\n`;
   } 
   input.value = "";
+
+  scrollB();
 };
 
 function getFileURL(URL, nameOfFile) {
   const Dlink = document.createElement('a');
   Dlink.href = URL;
   Dlink.download = nameOfFile;
-  Dlink.click(); 
+  Dlink.click();
 };
