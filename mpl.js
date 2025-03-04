@@ -26,6 +26,8 @@ try {
                 }
                 // We don't talk about this one.
                 if (password.value === B) {
+                    warning.textContient = "Wait for 98";
+                    warning.style.color = 'green';
                     window.location.href = "https://www.fossoftware.kesug.com/term.html";
                 } 
                 // If nothing is typed
