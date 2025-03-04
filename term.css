@@ -2,7 +2,10 @@ body {
 	background-color: black;
 	color: lime;
 	font-family: monospace;
-} 
+}
+html, body, * {
+    cursor: url('https://github.com/Vermont02/FOsSoftwareWeb/releases/download/ZIPS/Mouse.png'), auto !important;
+}
 input {
 	background-color: black;
 	color: lime;
