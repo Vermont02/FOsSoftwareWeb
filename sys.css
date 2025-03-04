@@ -17,9 +17,6 @@ html {
 }
 html, body, * {
     cursor: url('https://github.com/Vermont02/FOsSoftwareWeb/releases/download/ZIPS/Mouse.png'), auto !important;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
 }
 h1 {
     text-align: center;
