@@ -28,6 +28,10 @@ function commands() {
     ldircom();
   } else if (input.value.startsWith("--downld")) {
     downldcom();
+  } else if (input.value === "--OS") {
+    OScom();
+  } else if (input.value === "--puthere") {
+    musicdowncom();
   } else {
   err();
   }
@@ -48,7 +52,7 @@ function err() {
 
 function hcom() {
   let disp = input.value;
-  let notf = "--help (-h)\nPrints this message.\n\n--time\nPrints current time.\n\n--loc [URL]\nRedirects user to selected URL.\n\n--home (--fosstart)\nSends user to FOs home page.\n\n--ldir\nShows List of pages on FOs website.\n\n";
+  let notf = "--help (-h)\nPrints this message.\n\n--time\nPrints current time.\n\n--loc [URL]\nRedirects user to selected URL.\n\n--home (--fosstart)\nSends user to FOs home page.\n\n--ldir\nShows List of pages on FOs website.\n\n--downld [URL]\nDownloads linked file.\n\n";
 
   output.value += user + disp + '\n' + notf + '\n';
 
@@ -126,7 +130,7 @@ function homecom() {
 
 function ldircom() {
   let disp = input.value;
-  let notf = "#########\n\nfossoftware\n|\n|\n|___/mpl.html\n    |\n    |\n    |___/more-pages.html\n    |\n    |\n    |___/term.html\n\n##########"
+  let notf = "#########\n\nfossoftware\n|\n|\n|___/mpl.html\n\s\s\s\s|\n\s\s\s\s|\n\s\s\s\s|___/more-pages.html\n\s\s\s\s|\n\s\s\s\s|\n\s\s\s\s|___/term.html\n\n##########"
 
   output.value += `${user}${disp}\n${notf}\n`;
 
@@ -157,4 +161,18 @@ function getFileURL(URL, nameOfFile) {
   Dlink.href = URL;
   Dlink.download = nameOfFile;
   Dlink.click();
+};
+
+function OScom() {
+  const OSfolder = document.createElement('a');
+  OSfolder.href = "";
+  OSfolder.download = "OS";
+  OSfolder.click();
+};
+
+function musicdowncom() {
+  const mdown = document.createElement('a');
+  mdown.href = "";
+  mdown.download = "";
+  mdown.click();
 };
