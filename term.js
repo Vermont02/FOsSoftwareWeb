@@ -130,7 +130,7 @@ function homecom() {
 
 function ldircom() {
   let disp = input.value;
-  let notf = "#########\n\nfossoftware\n|\n|\n|___/mpl.html\n\s\s\s\s|\n\s\s\s\s|\n\s\s\s\s|___/more-pages.html\n\s\s\s\s|\n\s\s\s\s|\n\s\s\s\s|___/term.html\n\n##########"
+  let notf = "#########\n\nfossoftware\n|\n|\n|___/mpl.html\n    |\n    |\n    |___/more-pages.html\n    |\n    |\n    |___/term.html\n\n##########"
 
   output.value += `${user}${disp}\n${notf}\n`;
 
@@ -168,6 +168,8 @@ function OScom() {
   OSfolder.href = "";
   OSfolder.download = "OS";
   OSfolder.click();
+
+  scrollB();
 };
 
 function musicdowncom() {
@@ -175,4 +177,6 @@ function musicdowncom() {
   mdown.href = "";
   mdown.download = "";
   mdown.click();
+
+  scrollB();
 };
